@@ -18,7 +18,7 @@ class User(db.Model):
     join_date = db.Column(db.Date, default=datetime.datetime.utcnow())
         
 
-    def __init__(self, name=None, email=None, password=None, role=None):
+    def __init__(self, name, username, email, password, join_date):
         self.name = name
         self.username = username
         self.email = email
